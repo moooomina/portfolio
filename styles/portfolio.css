@@ -78,6 +78,15 @@ main .proflie .proflieRight .skill > img:nth-child(4) {margin-bottom:45px; width
 main .proflie .proflieRight .skill span {display:none;}
 /* work */
 main .work {height:1000px;}
+main .work .work_left {}
+main .work .work_left .web {}
+main .work .work_left .web img:first-child {}
+main .work .work_left .web img:last-child {}
+main .work .work_right {}
+main .work .work_right .design {}
+main .work .work_right .design img:first-child {}
+main .work .work_right .design img:last-child {}
+/* 푸터 */
 footer {}
 
 /* 미디어쿼리 */
