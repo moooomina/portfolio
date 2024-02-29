@@ -77,15 +77,18 @@ main .proflie .proflieRight .skill > img:nth-child(3) {margin-bottom:45px;}
 main .proflie .proflieRight .skill > img:nth-child(4) {margin-bottom:45px; width:231px;}
 main .proflie .proflieRight .skill span {display:none;}
 /* work */
-main .work {height:1000px;}
-main .work .work_left {}
-main .work .work_left .web {}
-main .work .work_left .web img:first-child {}
-main .work .work_left .web img:last-child {}
-main .work .work_right {}
-main .work .work_right .design {}
-main .work .work_right .design img:first-child {}
-main .work .work_right .design img:last-child {}
+main .work_by {height:1000px; display:flex; flex-flow:row nowrap;}
+main .work_by .work_left {
+    display:flex; flex-flow:column nowrap;
+}
+main .work_by .work_left > img:first-child {width:248px;}
+main .work_by .work_left > a {position:relative;}
+main .work_by .work_left > a img:first-child {position:absolute; left:50%; top:50%}
+main .work_by .work_left > a img:last-child {width:562px;}
+main .work_by .work_right {}
+main .work_by .work_right .design {}
+main .work_by .work_right .design img:first-child {}
+main .work_by .work_right .design img:last-child {}
 /* 푸터 */
 footer {}
 
