@@ -17,9 +17,14 @@ header #btn img {
 }
 /* intro */
 main {max-width:1440px; margin:0 auto;}
-main .section {width:100%; display:flex; flex-flow:column nowrap; justify-content:center; margin:0 auto;}
-main .mainWrap .mainTop {width:950px; margin:0 auto;
-position: relative; margin-bottom:30px; }
+main .section {
+    width:100%; display:flex; flex-flow:column nowrap; height:100vh; margin:0 auto;
+}
+main .mainWrap {align-items:center; }
+main .mainWrap .mainTop {
+    width:950px; margin:0 auto; padding-top:10px;
+    position: relative; margin-bottom:30px;
+}
 main .mainWrap .mainTop img {}
 main .mainWrap .mainTop img:first-child {}
 main .mainWrap .mainTop img:last-child {position:absolute; left:-15%; bottom:40px;}
@@ -37,7 +42,7 @@ main .mainWrap .mainBottom .right img:first-child {margin-bottom:35px;}
 main .mainWrap .mainBottom .right img:last-child {}
 /* proflie */
 main .proflie {
-    padding-top:50px; display:flex; flex-flow:row nowrap;
+    padding-top:50px; display:flex; flex-flow:row nowrap; justify-content:center;
 }
 main .proflie > div {margin-right:150px;}
 main .proflie .proflieLeft {display:flex; flex-flow:column nowrap; align-items:center;}
@@ -85,27 +90,30 @@ html * {transition: all 0.1s;}
 @media screen and (max-width:1200px){
     body {max-width:1200px;}
         /* intro */
-    main .mainWrap .mainTop {width:100%; margin:0 auto; display:flex; flex-flow:column nowrap; justify-content:center !important;}
+    main .mainWrap .mainTop {width:100%; margin:0 auto; display:flex; flex-flow:column nowrap; justify-content:center !important; padding:0;}
     main .mainWrap .mainTop img:first-child {
         width:600px; margin:0 auto; padding-top:30px;
         display:flex !important;
         position:inherit;
     }
     main .mainWrap .mainTop img:last-child {
-        width:80px; left:100px; top:300px;}
+        width:80px; left:100px; top:350px;}
     main .mainWrap .mainBottom {display:flex; flex-flow:column nowrap;}
     main .mainWrap .mainBottom .left {display:flex; flex-flow:column nowrap; justify-content:center;}
     main .mainWrap .mainBottom .left img {}
-    main .mainWrap .mainBottom .left img:first-child {width:50px; left:50%; margin:40px 0 50px;}
+    main .mainWrap .mainBottom .left img:first-child {width:50px; left:50%; margin:20px 0 40px;}
     main .mainWrap .mainBottom .left img:last-child {width:400px;}
+    main .mainWrap .mainBottom .right {display:flex; flex-flow:row nowrap; align-items:center; margin-top:50px;}
+    main .mainWrap .mainBottom .right img:first-child {width:400px; margin:5px 30px 0 0;}
+    main .mainWrap .mainBottom .right img:last-child {height:100px;}
 }
-@media screen and (max-width:900px){
-    body {max-width:900px;}
+@media screen and (max-width:700px){
+    body {max-width:700px;}
     header .top a:first-child img {width:120px;}
     header .top a:last-child img {width:100px;}
     header #btn {display:none;}
     main .section {
-        border-bottom:1px solid #eee;
+        height:auto; border-bottom:1px solid #eee;
     }
     /* intro */
     main .mainWrap .mainTop {width:100%; margin:0 auto; display:flex; flex-flow:column nowrap; justify-content:center !important;}
@@ -122,10 +130,10 @@ html * {transition: all 0.1s;}
     }
     main .mainWrap .mainBottom .left {display:flex; flex-flow:column nowrap; justify-content:center;}
     main .mainWrap .mainBottom .left img {}
-    main .mainWrap .mainBottom .left img:first-child {width:40px;}
+    main .mainWrap .mainBottom .left img:first-child {width:40px; margin:40px 0 50px;}
     main .mainWrap .mainBottom .left img:last-child {width:290px;}
-    main .mainWrap .mainBottom .right {display:flex; flex-flow:column nowrap;}
-    main .mainWrap .mainBottom .right img:first-child {width:300px; margin-top:50px;}
+    main .mainWrap .mainBottom .right {display:flex; flex-flow:column nowrap; margin:0;}
+    main .mainWrap .mainBottom .right img:first-child {width:300px; margin:50px 0 30px;}
     main .mainWrap .mainBottom .right img:last-child {width:320px;}
     /* proflie */
     main .proflie {
