@@ -8,22 +8,22 @@ header .top  a {}
 header .top  a img {}
 header .top  img {}
 main {max-width:1440px; margin:0 auto;}
-main .mainTop {margin-bottom:30px;}
-main .mainTop img {}
-main .mainTop img:first-child {position:relative; top:-40px; left:80px;}
-main .mainTop img:last-child {position:relative; left:120px;}
-main .mainBottom {
+main .mainWrap .mainTop {margin-bottom:30px;}
+main .mainWrap .mainTop img {}
+main .mainWrap .mainTop img:first-child {position:relative; top:-40px; left:80px;}
+main .mainWrap .mainTop img:last-child {position:relative; left:120px;}
+main .mainWrap .mainBottom {
     display:flex; justify-content:space-between;
     align-items:center; padding:0 80px; margin-bottom:30px;
 }
-main .mainBottom .left {}
-main .mainBottom .left img {}
-main .mainBottom .left img:first-child {margin-bottom:35px; position:relative; left:280px;}
-main .mainBottom .left img:last-child {}
-main .mainBottom .right {}
-main .mainBottom .right img {float:right;}
-main .mainBottom .right img:first-child {margin-bottom:35px;}
-main .mainBottom .right img:last-child {}
+main .mainWrap .mainBottom .left {}
+main .mainWrap .mainBottom .left img {}
+main .mainWrap .mainBottom .left img:first-child {margin-bottom:35px; position:relative; left:280px;}
+main .mainWrap .mainBottom .left img:last-child {}
+main .mainWrap .mainBottom .right {}
+main .mainWrap .mainBottom .right img {float:right;}
+main .mainWrap .mainBottom .right img:first-child {margin-bottom:35px;}
+main .mainWrap .mainBottom .right img:last-child {}
 /* 버튼 */
 main #btn {
     position:absolute; left:50%; position:fixed;
@@ -60,6 +60,10 @@ main .proflie .proflieCenter .experience img {}
 main .proflie .proflieCenter .experience img:nth-child(1) {width:133px;}
 main .proflie .proflieCenter .experience img:nth-child(2) {width:400px; margin-bottom:0;}
 main .proflie .proflieRight {margin-right:0;}
+main .proflie .proflieRight .skill {}
+main .proflie .proflieRight .skill img {margin-bottom:30px;}
+main .proflie .proflieRight .skill img:nth-child(2) {margin-bottom:45px;}
+main .proflie .proflieRight .skill img:nth-child(3) {margin-bottom:45px;}
 /* work */
 main .work {height:1000px;}
 footer {}
