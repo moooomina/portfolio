@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min-A portfolio</title>
     <link rel="stylesheet" href="./styles/reset.css">
+    <!-- <link rel="stylesheet" href="./styles/jquery.fullPage.css"> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <!-- <script src="./script/jquery.fullPage.js"></script> -->
     <link rel="stylesheet" href="./styles/portfolio.css">
 </head>
 <body>
@@ -15,12 +18,13 @@
             <a href="./index.html"><img src="./images/Top_PortfolioWebsite.png" alt=""></a>
             <a href="./index.html"><img src="./images/Top_Name.png" alt=""></a>
         </div>
+        <button type="button" id="btn"><img src="./images/down.png" alt=""></button>
     </header>
     <main>
-        <section class="container mainWrap">
+        <div class="section mainWrap">
             <div class="mainTop">
-                <img src="./images/2024minaPortfolio.png" alt="">
                 <img src="./images/creativeDeveloper.png" alt="">
+                <img src="./images/2024minaPortfolio.png" alt="">
             </div>
             <div class="mainBottom">
                 <div class="left">
@@ -32,22 +36,24 @@
                     <img src="./images/tree.jpg" alt="">
                 </div>
             </div>
-        </section>
-        <button type="button" id="btn"><img src="./images/down.png" alt=""></button>
-        <section class="container proflie">
+        </div>
+        <div class="section proflie">
             <div class="proflieLeft">
                 <img src="./images/minaProfile.png" alt="">
                 <img src="./images/Name_HwangMinAh.png" alt="">
                 <img src="./images/Introduction.png" alt="">
+                <span><img src="./images/Introduction_C.png" alt=""></span>
             </div>
             <div class="proflieCenter">
                 <div class="about">
                     <img src="./images/Proflie_AboutMe.png" alt="">
                     <img src="./images/Proflie_AboutMe_Contents.png" alt="">
+                    <span><img src="./images/Proflie_AboutMe_Contents_C.png" alt=""></span>
                 </div>
                 <div class="awards">
                     <img src="./images/Proflie_awards.png" alt="">
                     <img src="./images/Proflie_awards_contents.png" alt="">
+                    <span><img src="./images/Proflie_awards_contents_C.png" alt=""></span>
                 </div>
                 <div class="experience">
                     <img src="./images/Proflie_Experience.png" alt="">
@@ -60,14 +66,28 @@
                     <img src="./images/Proflie_Skill_1.png" alt="">
                     <img src="./images/Proflie_Skill_2.png" alt="">
                     <img src="./images/Proflie_Skill_3.png" alt="">
+                    <span><img src="./images/Proflie_Skill_1_C.png" alt=""></span>
+                    <span><img src="./images/Proflie_Skill_2_C.png" alt=""></span>
+                    <span><img src="./images/Proflie_Skill_3_C.png" alt=""></span>
                 </div>
             </div>
-        </section>
-        <section class="container work">
-
-        </section>
+        </div>
+        <div class="section work">
+        </div>
     </main>
     <footer></footer>
     <script src="./script/script.js"></script>
+    <!-- <script>
+        $('main').fullpage({
+            scrollBar:true, //스크롤바 표시하기 (기본값 false)
+            scrollingSpeed:200, //스크롤바 선환속도 (기본값 1000)
+            navigation:true, //우측 내이게이션 표시하기(기본값 false)
+            navigationTooltips:['intro','proflie','teamproject','project'], //내비게이션에 마우스 올리면 제목 표시
+            showActiveTooltip:true, //자동으로 제목 표시(기본값 false)
+
+            menu:'nav', //상단 메뉴 클릭시 해당 메뉴 위치로 이동
+            anchors:['a','b','c','d'], //메뉴a #이름과 일치시킨 이름작성 
+        })
+    </script> -->
 </body>
 </html>
