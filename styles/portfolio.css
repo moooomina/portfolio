@@ -86,7 +86,8 @@ main .work_by .work_left {
 }
 main .work_by .work_left > img:first-child {width:248px; margin:20px 0;}
 main .work_by .work_left > a {position:relative;}
-main .work_by .work_left > a img:first-child {position:absolute; left:50%; top:50%; text-align:center;}
+main .work_by .work_left > a:hover {opacity:0.5;}
+main .work_by .work_left > a img:first-child {position:absolute; left:45%; top:50%;}
 main .work_by .work_left > a img:last-child {width:562px;}
 main .work_by .work_right {
     display:flex; flex-flow:column nowrap;
@@ -97,13 +98,21 @@ main .work_by .work_right .right_top > img {margin:80px 0 50px;}
 main .work_by .work_right .right_top .center {display:flex; justify-content:space-between;}
 main .work_by .work_right .right_top .center img:first-child {}
 main .work_by .work_right .right_top .center img:last-child {position:relative; right:-100px;}
-main .work_by .work_right .right_bottom {padding-bottom:30px;  background-color:pink;}
-main .work_by .work_right .right_bottom > img:first-child {}
-main .work_by .work_right .right_bottom > img:last-child {}
-main .work_by .work_right .right_bottom > a:first-child {margin-right:10px;}
-main .work_by .work_right .right_bottom > a:first-child img {}
-main .work_by .work_right .right_bottom > a:last-child {}
-main .work_by .work_right .right_bottom > a:last-child img {}
+main .work_by .work_right .right_bottom {
+    padding-bottom:30px;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center; position:relative;
+}
+main .work_by .work_right .right_bottom > img:first-child {margin-right:15px;}
+main .work_by .work_right .right_bottom > img:nth-child(2) {position:absolute; left:120px;}
+main .work_by .work_right .right_bottom a {margin-right:15px;}
+main .work_by .work_right .right_bottom a img {
+    border-radius:30px; border:2px solid #777; padding:10px 20px;
+}
+main .work_by .work_right .right_bottom a:hover img {
+    background-color:#eee; border-radius:30px; border:2px solid #777;
+}
 main .work_by .work_right .design {}
 main .work_by .work_right .design img:first-child {}
 main .work_by .work_right .design img:last-child {}
