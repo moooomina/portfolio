@@ -120,7 +120,7 @@ main .section_w .work_right .design img:first-child {}
 main .section_w .work_right .design img:last-child {}
 /* work_yg */
 main .work_yg {margin-top:-30px;}
-main .work_yg .work_right .right_top .center img:first-child {width:347px;}
+main .work_yg .work_right .right_top .center img:first-child {height:327px;}
 main .work_yg .work_right .right_bottom > img:nth-child(2) {position:absolute; left:190px;}
 /* 푸터 */
 footer {}
