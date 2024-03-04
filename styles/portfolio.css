@@ -18,7 +18,7 @@ header #btn img {
 /* intro */
 main {max-width:1440px; margin:0 auto;}
 main .section {
-    width:100%; display:flex; flex-flow:column nowrap; height:100vh; margin:0 auto;
+    width:100%; display:flex; flex-flow:column nowrap; margin:0 auto;
 }
 main .mainWrap {align-items:center; }
 main .mainWrap .mainTop {
@@ -42,7 +42,8 @@ main .mainWrap .mainBottom .right img:first-child {margin-bottom:35px;}
 main .mainWrap .mainBottom .right img:last-child {}
 /* proflie */
 main .proflie {
-    padding-top:50px; display:flex; flex-flow:row nowrap; justify-content:center;
+    padding-top:70px; display:flex; flex-flow:row nowrap; 
+    justify-content:center; height:90vh;
 }
 main .proflie > div {margin-right:150px;}
 main .proflie .proflieLeft {display:flex; flex-flow:column nowrap; align-items:center;}
@@ -76,46 +77,51 @@ main .proflie .proflieRight .skill > img:nth-child(2) {margin-bottom:45px; width
 main .proflie .proflieRight .skill > img:nth-child(3) {margin-bottom:45px;}
 main .proflie .proflieRight .skill > img:nth-child(4) {margin-bottom:45px; width:231px;}
 main .proflie .proflieRight .skill span {display:none;}
-/* work */
-main .work_by {
+/* work_by */
+main .section_w {
     height:1000px; display:flex; flex-flow:row nowrap;
+    height:90vh;
 }
-main .work_by .work_left {
+main .section_w .work_left {
     display:flex; flex-flow:column nowrap;
     margin-right:50px;
 }
-main .work_by .work_left > img:first-child {width:248px; margin:20px 0;}
-main .work_by .work_left > a {position:relative;}
-main .work_by .work_left > a:hover {opacity:0.5;}
-main .work_by .work_left > a img:first-child {position:absolute; left:45%; top:50%;}
-main .work_by .work_left > a img:last-child {width:562px;}
-main .work_by .work_right {
+main .section_w .work_left > img:first-child {width:248px; margin:20px 0 30px;}
+main .section_w .work_left > a {position:relative;}
+main .section_w .work_left > a:hover {opacity:0.5;}
+main .section_w .work_left > a img:first-child {position:absolute; left:40%; top:50%;}
+main .section_w .work_left > a img:last-child {width:562px;}
+main .section_w .work_right {
     display:flex; flex-flow:column nowrap;
     justify-content:space-between; padding:0 10px 100px;
 }
-main .work_by .work_right .right_top {}
-main .work_by .work_right .right_top > img {margin:80px 0 50px;}
-main .work_by .work_right .right_top .center {display:flex; justify-content:space-between;}
-main .work_by .work_right .right_top .center img:first-child {}
-main .work_by .work_right .right_top .center img:last-child {position:relative; right:-100px;}
-main .work_by .work_right .right_bottom {
+main .section_w .work_right .right_top {margin-bottom:100px;}
+main .section_w .work_right .right_top > img {margin:80px 0 50px;}
+main .section_w .work_right .right_top .center {display:flex; justify-content:space-between;}
+main .section_w .work_right .right_top .center img:first-child {}
+main .section_w .work_right .right_top .center img:last-child {position:relative; right:-100px;}
+main .section_w .work_right .right_bottom {
     padding-bottom:30px;
     display:flex; flex-flow:row nowrap;
     justify-content:space-between;
     align-items:center; position:relative;
 }
-main .work_by .work_right .right_bottom > img:first-child {margin-right:15px;}
-main .work_by .work_right .right_bottom > img:nth-child(2) {position:absolute; left:120px;}
-main .work_by .work_right .right_bottom a {margin-right:15px;}
-main .work_by .work_right .right_bottom a img {
-    border-radius:30px; border:2px solid #777; padding:10px 20px;
+main .section_w .work_right .right_bottom > img:first-child {margin-right:15px;}
+main .section_w .work_right .right_bottom > img:nth-child(2) {position:absolute; left:120px;}
+main .section_w .work_right .right_bottom a {margin-right:15px;}
+main .section_w .work_right .right_bottom a img {
+    border-radius:30px; border:1.5px solid #000; padding:10px 20px;
 }
-main .work_by .work_right .right_bottom a:hover img {
-    background-color:#eee; border-radius:30px; border:2px solid #777;
+main .section_w .work_right .right_bottom a:hover img {
+    background-color:#eee; border-radius:30px; border:1.5px solid #000;
 }
-main .work_by .work_right .design {}
-main .work_by .work_right .design img:first-child {}
-main .work_by .work_right .design img:last-child {}
+main .section_w .work_right .design {}
+main .section_w .work_right .design img:first-child {}
+main .section_w .work_right .design img:last-child {}
+/* work_yg */
+main .work_yg {margin-top:-30px;}
+main .work_yg .work_right .right_top .center img:first-child {width:347px;}
+main .work_yg .work_right .right_bottom > img:nth-child(2) {position:absolute; left:190px;}
 /* 푸터 */
 footer {}
 
