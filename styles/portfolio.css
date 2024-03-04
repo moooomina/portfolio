@@ -7,150 +7,152 @@ header .top {
 header .top a {}
 header .top a img {}
 /* 버튼 */
-header #btn {
-    position:absolute; left:50%; position:fixed; bottom:15px;
+header .btn #topBtn {
+    position:absolute; right:5%; position:fixed; bottom:50px;
 }
-header #btn img {
+header .btn #topBtn img {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
+    border:1px solid #000; border-radius:50%;
+    padding:3px;
 }
 /* intro */
 main {max-width:1440px; margin:0 auto;}
 /* 공통 */
-main .bg {height:90vh;}
-main .section {
+main .section {}
+main .section .wrap {
     width:100%; display:flex; flex-flow:column nowrap; margin:0 auto;
 }
-main .mainWrap {align-items:center; }
-main .mainWrap .mainTop {
+main .section .mainWrap {align-items:center; margin-top:-80px;}
+main .section .mainWrap .mainTop {
     width:950px; margin:0 auto; padding-top:10px;
     position: relative; margin-bottom:30px;
 }
-main .mainWrap .mainTop img {}
-main .mainWrap .mainTop img:first-child {}
-main .mainWrap .mainTop img:last-child {position:absolute; left:-15%; bottom:40px;}
-main .mainWrap .mainBottom {
+main .section .mainWrap .mainTop img {}
+main .section .mainWrap .mainTop img:first-child {}
+main .section .mainWrap .mainTop img:last-child {position:absolute; left:-15%; bottom:40px;}
+main .section .mainWrap .mainBottom {
     display:flex; justify-content:space-between;
     align-items:center; padding:0 80px; margin-bottom:30px;
 }
-main .mainWrap .mainBottom .left {}
-main .mainWrap .mainBottom .left img {}
-main .mainWrap .mainBottom .left img:first-child {margin-bottom:35px; position:relative; left:280px;}
-main .mainWrap .mainBottom .left img:last-child {}
-main .mainWrap .mainBottom .right {}
-main .mainWrap .mainBottom .right img {float:right;}
-main .mainWrap .mainBottom .right img:first-child {margin-bottom:35px;}
-main .mainWrap .mainBottom .right img:last-child {}
+main .section .mainWrap .mainBottom .left {}
+main .section .mainWrap .mainBottom .left img {}
+main .section .mainWrap .mainBottom .left img:first-child {margin-bottom:35px; position:relative; left:280px;}
+main .section .mainWrap .mainBottom .left img:last-child {}
+main .section .mainWrap .mainBottom .right {}
+main .section .mainWrap .mainBottom .right img {float:right;}
+main .section .mainWrap .mainBottom .right img:first-child {margin-bottom:35px;}
+main .section .mainWrap .mainBottom .right img:last-child {}
 /* proflie */
-main .proflie {
+main .section .proflie {
     padding-top:30px; display:flex; flex-flow:row nowrap; 
     justify-content:center;
 }
-main .proflie > div {margin-right:150px;}
-main .proflie .proflieLeft {display:flex; flex-flow:column nowrap; align-items:center;}
-main .proflie .proflieLeft img {margin-bottom:40px;}
-main .proflie .proflieLeft > img:nth-child(1) {width:296px;}
-main .proflie .proflieLeft > img:nth-child(2) {}
-main .proflie .proflieLeft > img:nth-child(3) {margin-bottom:80px;}
-main .proflie .proflieLeft span {display:none;}
-main .proflie .proflieCenter {display:flex; flex-flow:column nowrap;}
-main .proflie .proflieCenter div {display:flex; flex-flow:column nowrap; margin-bottom:103px;}
-main .proflie .proflieCenter div > img:first-child {margin-bottom:30px;}
-main .proflie .proflieCenter .about {}
-main .proflie .proflieCenter .about img {}
-main .proflie .proflieCenter .about > img:nth-child(1) {width:116px;}
-main .proflie .proflieCenter .about > img:nth-child(2) {width:165px;}
-main .proflie .proflieCenter .about span {display:none;}
-main .proflie .proflieCenter .awards {}
-main .proflie .proflieCenter .awards img {}
-main .proflie .proflieCenter .awards > img:nth-child(1) {width:91px;}
-main .proflie .proflieCenter .awards > img:nth-child(2) {width:297px;}
-main .proflie .proflieCenter .awards span {display:none;}
-main .proflie .proflieCenter .experience {}
-main .proflie .proflieCenter .experience img {}
-main .proflie .proflieCenter .experience img:nth-child(1) {width:133px;}
-main .proflie .proflieCenter .experience img:nth-child(2) {width:344px; margin-bottom:0;}
-main .proflie .proflieRight {margin-right:0;}
-main .proflie .proflieRight .skill {display:flex; flex-flow:column nowrap;}
-main .proflie .proflieRight .skill > img {}
-main .proflie .proflieRight .skill > img:nth-child(1) {width:60px; margin-bottom:30px;}
-main .proflie .proflieRight .skill > img:nth-child(2) {margin-bottom:45px; width:228px;}
-main .proflie .proflieRight .skill > img:nth-child(3) {margin-bottom:45px;}
-main .proflie .proflieRight .skill > img:nth-child(4) {margin-bottom:45px; width:231px;}
-main .proflie .proflieRight .skill span {display:none;}
+main .section .proflie > div {margin-right:150px;}
+main .section .proflie .proflieLeft {display:flex; flex-flow:column nowrap; align-items:center;}
+main .section .proflie .proflieLeft img {margin-bottom:40px;}
+main .section .proflie .proflieLeft > img:nth-child(1) {width:296px;}
+main .section .proflie .proflieLeft > img:nth-child(2) {}
+main .section .proflie .proflieLeft > img:nth-child(3) {margin-bottom:80px;}
+main .section .proflie .proflieLeft span {display:none;}
+main .section .proflie .proflieCenter {display:flex; flex-flow:column nowrap;}
+main .section .proflie .proflieCenter div {display:flex; flex-flow:column nowrap; margin-bottom:103px;}
+main .section .proflie .proflieCenter div > img:first-child {margin-bottom:30px;}
+main .section .proflie .proflieCenter .about {}
+main .section .proflie .proflieCenter .about img {}
+main .section .proflie .proflieCenter .about > img:nth-child(1) {width:116px;}
+main .section .proflie .proflieCenter .about > img:nth-child(2) {width:165px;}
+main .section .proflie .proflieCenter .about span {display:none;}
+main .section .proflie .proflieCenter .awards {}
+main .section .proflie .proflieCenter .awards img {}
+main .section .proflie .proflieCenter .awards > img:nth-child(1) {width:91px;}
+main .section .proflie .proflieCenter .awards > img:nth-child(2) {width:297px;}
+main .section .proflie .proflieCenter .awards span {display:none;}
+main .section .proflie .proflieCenter .experience {}
+main .section .proflie .proflieCenter .experience img {}
+main .section .proflie .proflieCenter .experience img:nth-child(1) {width:133px;}
+main .section .proflie .proflieCenter .experience img:nth-child(2) {width:344px; margin-bottom:0;}
+main .section .proflie .proflieRight {margin-right:0;}
+main .section .proflie .proflieRight .skill {display:flex; flex-flow:column nowrap;}
+main .section .proflie .proflieRight .skill > img {}
+main .section .proflie .proflieRight .skill > img:nth-child(1) {width:60px; margin-bottom:30px;}
+main .section .proflie .proflieRight .skill > img:nth-child(2) {margin-bottom:45px; width:228px;}
+main .section .proflie .proflieRight .skill > img:nth-child(3) {margin-bottom:45px;}
+main .section .proflie .proflieRight .skill > img:nth-child(4) {margin-bottom:45px; width:231px;}
+main .section .proflie .proflieRight .skill span {display:none;}
 /* 공통 */
-main .section_w {
+main .section .section_w {
     display:flex; flex-flow:row nowrap;
 }
-main .section_w .work_left {
+main .section .section_w .work_left {
     display:flex; flex-flow:column nowrap;
     margin-right:50px;
 }
-main .section_w .work_left > a {position:relative;}
-main .section_w .work_left > a:hover {opacity:0.5;}
-main .section_w .work_left > a img:first-child {position:absolute; left:40%; top:50%;}
-main .section_w .work_left > a img:last-child {width:562px;}
-main .section_w .work_right {
+main .section .section_w .work_left > a {position:relative;}
+main .section .section_w .work_left > a:hover {opacity:0.5;}
+main .section .section_w .work_left > a img:first-child {position:absolute; left:40%; top:50%;}
+main .section .section_w .work_left > a img:last-child {width:562px;}
+main .section .section_w .work_right {
     display:flex; flex-flow:column nowrap;
     justify-content:space-between; padding:0 10px 100px;
     position:relative;
 }
-main .section_w .work_right .right_top > img {margin:80px 0 50px;}
-main .section_w .work_right .right_top .center {display:flex; justify-content:space-between;}
-main .section_w .work_right .right_top .center img:first-child {}
-main .section_w .work_right .right_top .center img:last-child {position:relative; right:-100px;}
-main .section_w .work_right .right_bottom {
+main .section .section_w .work_right .right_top > img {margin:80px 0 50px;}
+main .section .section_w .work_right .right_top .center {
+    display:flex; justify-content:space-between; margin-bottom:10px;
+}
+main .section .section_w .work_right .right_top .center img:first-child {}
+main .section .section_w .work_right .right_top .center img:last-child {position:relative; right:-100px;}
+main .section .section_w .work_right .right_bottom {
     padding-bottom:30px;
     display:flex; flex-flow:row nowrap;
     justify-content:space-between;
     align-items:center; position:relative;
 }
-main .section_w .work_right .right_bottom > img:first-child {margin-right:15px;}
-main .section_w .work_right .right_bottom > img:nth-child(2) {position:absolute; left:120px;}
-main .section_w .work_right .right_bottom a {margin-right:15px;}
-main .section_w .work_right .right_bottom a img {
+main .section .section_w .work_right .right_bottom > img:first-child {margin-right:15px;}
+main .section .section_w .work_right .right_bottom > img:nth-child(2) {position:absolute; left:120px;}
+main .section .section_w .work_right .right_bottom a {margin-right:15px;}
+main .section .section_w .work_right .right_bottom a img {
     border-radius:30px; border:1.5px solid #000; padding:10px 20px;
 }
-main .section_w .work_right .right_bottom a:hover {
+main .section .section_w .work_right .right_bottom a:hover {
     background-color:#eee; border-radius:30px; border:1.5px solid #000;
 }
 /* work_yg */
-main .work_yg {}
-main .work_yg .work_left > img:first-child {width:243px; margin:-10px 0 30px;}
-main .work_yg .work_right .right_top {margin-bottom:50px;}
-main .work_yg .work_right .right_top .center img:first-child {height:455px;}
-main .work_yg .work_right .right_top .center img:last-child {height:347px;}
-main .work_yg .work_right .right_bottom > img:nth-child(2) {position:absolute; left:190px;}
-main .work_yg .work_right .page {position:absolute; right:-80px; bottom:80px;}
+main .section .work_yg {}
+main .section .work_yg .work_left > img:first-child {width:243px; margin:20px 0 30px;}
+main .section .work_yg .work_right .right_top {margin-bottom:50px;}
+main .section .work_yg .work_right .right_top .center img:first-child {height:455px;}
+main .section .work_yg .work_right .right_top .center img:last-child {height:347px;}
+main .section .work_yg .work_right .right_bottom > img:nth-child(2) {position:absolute; left:190px;}
+main .section .work_yg .work_right .page {position:absolute; right:-80px; bottom:135px;}
 /* work_by */
-main .work_by {margin-top:-30px;}
-main .work_by .work_right .right_top {margin-bottom:100px;}
-main .work_by .work_left > img:first-child {width:248px; margin:0px 0 30px;}
-main .work_by .work_right .page {position:absolute; right:-80px; bottom:100px;}
+main .section .work_by {margin-top:20px;}
+main .section .work_by .work_right .right_top {margin-bottom:100px;}
+main .section .work_by .work_left > img:first-child {width:248px; margin:0px 0 30px;}
+main .section .work_by .work_right .page {position:absolute; right:-80px; bottom:135px;}
 /* work_d */
-main .section_d {
+main .section .section_d {
     display:flex; flex-flow:row nowrap;
-    margin-top:-30px; position: relative;
+    position: relative; height:90vh;
 }
-main .section_d .work_left {
+main .section .section_d .work_left {
     display:flex; flex-flow:column nowrap;
     margin-right:50px;
 }
-main .section_d .work_left > img:first-child {width:212px; margin:20px 0 80px;}
-main .section_d .work_left > img:nth-child(2) {margin-bottom:60px;}
-main .section_d .work_left a:hover {transform:rotate(5deg);} 
-main .section_d .page {position:absolute; bottom:50px;}
+main .section .section_d .work_left > img:first-child {width:212px; margin:20px 0 80px;}
+main .section .section_d .work_left > img:nth-child(2) {margin-bottom:60px;}
+main .section .section_d .work_left a:hover {transform:rotate(5deg);} 
+main .section .section_d .page {position:absolute; bottom:100px;}
 /* thankyou */
-main .thankyou {
-    margin-top:0px;
-}
-main .thankyou .tree_bg {
-    background-image:url(../images/tree_main.png); height:100vh;
+main .section .thankyou {}
+main .section .thankyou .tree_bg {
+    background-image:url(../images/tree_main.png); height:100%;
     background-position:center; background-size:cover;
-    position:absolute; left:0; width:100%;
+    position:absolute; left:0; bottom:0; width:100%;
 }
-main .thankyou .tree_bg img {
+main .section .thankyou .tree_bg img {
     position:absolute; left:40%; bottom:40%;
 }
 /* 푸터 */
@@ -165,84 +167,88 @@ html * {transition: all 0.1s;}
 }
 @media screen and (max-width:1200px){
     body {max-width:1200px;}
-        /* intro */
-    main .mainWrap .mainTop {width:100%; margin:0 auto; display:flex; flex-flow:column nowrap; justify-content:center !important; padding:0;}
-    main .mainWrap .mainTop img:first-child {
+    /* intro */
+    main .section .mainWrap .mainTop {
+        width:100%; margin:0 auto;
+        display:flex; flex-flow:column nowrap;
+        justify-content:center !important; padding:0;
+    }
+    main .section .mainWrap .mainTop img:first-child {
         width:600px; margin:0 auto; padding-top:30px;
         display:flex !important;
         position:inherit;
     }
-    main .mainWrap .mainTop img:last-child {
+    main .section .mainWrap .mainTop img:last-child {
         width:80px; left:100px; top:350px;}
-    main .mainWrap .mainBottom {display:flex; flex-flow:column nowrap;}
-    main .mainWrap .mainBottom .left {display:flex; flex-flow:column nowrap; justify-content:center;}
-    main .mainWrap .mainBottom .left img {}
-    main .mainWrap .mainBottom .left img:first-child {width:50px; left:50%; margin:20px 0 40px;}
-    main .mainWrap .mainBottom .left img:last-child {width:400px;}
-    main .mainWrap .mainBottom .right {display:flex; flex-flow:row nowrap; align-items:center; margin-top:50px;}
-    main .mainWrap .mainBottom .right img:first-child {width:400px; margin:5px 30px 0 0;}
-    main .mainWrap .mainBottom .right img:last-child {height:100px;}
+    main .section .mainWrap .mainBottom {display:flex; flex-flow:column nowrap;}
+    main .section .mainWrap .mainBottom .left {display:flex; flex-flow:column nowrap; justify-content:center;}
+    main .section .mainWrap .mainBottom .left img {}
+    main .section .mainWrap .mainBottom .left img:first-child {width:50px; left:50%; margin:20px 0 40px;}
+    main .section .mainWrap .mainBottom .left img:last-child {width:400px;}
+    main .section .mainWrap .mainBottom .right {display:flex; flex-flow:row nowrap; align-items:center; margin-top:50px;}
+    main .section .mainWrap .mainBottom .right img:first-child {width:400px; margin:5px 30px 0 0;}
+    main .section .mainWrap .mainBottom .right img:last-child {height:100px;}
 }
 @media screen and (max-width:700px){
     body {max-width:700px;}
     header .top a:first-child img {width:120px;}
     header .top a:last-child img {width:100px;}
     header #btn {display:none;}
-    main .section {
+    main .section .section {
         height:auto; border-bottom:1px solid #eee;
     }
     /* intro */
-    main .mainWrap .mainTop {width:100%; margin:0 auto; display:flex; flex-flow:column nowrap; justify-content:center !important;}
-    main .mainWrap .mainTop img:first-child {
+    main .section .mainWrap .mainTop {width:100%; margin:0 auto; display:flex; flex-flow:column nowrap; justify-content:center !important;}
+    main .section .mainWrap .mainTop img:first-child {
         width:350px; margin:0 auto; padding-top:30px;
         display:flex !important;
         position:inherit;
     }
-    main .mainWrap .mainTop img:last-child {
+    main .section .mainWrap .mainTop img:last-child {
         width:80px; left:100px; top:250px;}
-    main .mainWrap .mainBottom {
+    main .section .mainWrap .mainBottom {
         flex-flow:column nowrap; align-items:center;
         margin-bottom:50px;
     }
-    main .mainWrap .mainBottom .left {display:flex; flex-flow:column nowrap; justify-content:center;}
-    main .mainWrap .mainBottom .left img {}
-    main .mainWrap .mainBottom .left img:first-child {width:40px; margin:40px 0 50px;}
-    main .mainWrap .mainBottom .left img:last-child {width:290px;}
-    main .mainWrap .mainBottom .right {display:flex; flex-flow:column nowrap; margin:0;}
-    main .mainWrap .mainBottom .right img:first-child {width:300px; margin:50px 0 30px;}
-    main .mainWrap .mainBottom .right img:last-child {width:320px;}
+    main .section .mainWrap .mainBottom .left {display:flex; flex-flow:column nowrap; justify-content:center;}
+    main .section .mainWrap .mainBottom .left img {}
+    main .section .mainWrap .mainBottom .left img:first-child {width:40px; margin:40px 0 50px;}
+    main .section .mainWrap .mainBottom .left img:last-child {width:290px;}
+    main .section .mainWrap .mainBottom .right {display:flex; flex-flow:column nowrap; margin:0;}
+    main .section .mainWrap .mainBottom .right img:first-child {width:300px; margin:50px 0 30px;}
+    main .section .mainWrap .mainBottom .right img:last-child {width:320px;}
     /* proflie */
-    main .proflie {
+    main .section .proflie {
         padding-top:50px; flex-flow:column nowrap; justify-content:flex-start;
     }
-    main .proflie > div {margin-right:0;}
-    main .proflie .proflieLeft {margin:0 auto;}
-    main .proflie .proflieLeft > img:nth-child(1) {width:200px;}
-    main .proflie .proflieLeft img:nth-child(2) {width:250px;}
-    main .proflie .proflieLeft img:nth-child(3) {display:none;}
-    main .proflie .proflieLeft span {display:block;}
-    main .proflie .proflieCenter {display:flex; flex-flow:column nowrap;}
-    main .proflie .proflieCenter div {
+    main .section .proflie > div {margin-right:0;}
+    main .section .proflie .proflieLeft {margin:0 auto;}
+    main .section .proflie .proflieLeft > img:nth-child(1) {width:200px;}
+    main .section .proflie .proflieLeft img:nth-child(2) {width:250px;}
+    main .section .proflie .proflieLeft img:nth-child(3) {display:none;}
+    main .section .proflie .proflieLeft span {display:block;}
+    main .section .proflie .proflieCenter {display:flex; flex-flow:column nowrap;}
+    main .section .proflie .proflieCenter div {
         display:flex; flex-flow:column nowrap; align-items:center;
         margin-bottom:40px;
     }
-    main .proflie .proflieCenter .about img:nth-child(2) {display:none;}
-    main .proflie .proflieCenter .about span {display:block; width:165px;}
-    main .proflie .proflieCenter .awards > img:nth-child(1) {width:91px;}
-    main .proflie .proflieCenter .awards img:nth-child(2) {display:none;}
-    main .proflie .proflieCenter .awards span {display:block;}
-    main .proflie .proflieRight {
+    main .section .proflie .proflieCenter .about img:nth-child(2) {display:none;}
+    main .section .proflie .proflieCenter .about span {display:block; width:165px;}
+    main .section .proflie .proflieCenter .awards > img:nth-child(1) {width:91px;}
+    main .section .proflie .proflieCenter .awards img:nth-child(2) {display:none;}
+    main .section .proflie .proflieCenter .awards span {display:block;}
+    main .section .proflie .proflieRight {
         margin-right:0; display:flex;
         flex-flow:column nowrap;
     }
-    main .proflie .proflieRight .skill {
+    main .section .proflie .proflieRight .skill {
         display:flex; flex-flow:column nowrap; align-items:center; margin-bottom:0;
     }
-    main .proflie .proflieRight .skill img {margin-bottom:30px; }
-    main .proflie .proflieRight .skill > img:nth-child(2) {display:none;}
-    main .proflie .proflieRight .skill > img:nth-child(3) {display:none;}
-    main .proflie .proflieRight .skill > img:nth-child(4) {display:none;}
-    main .proflie .proflieRight .skill span {display:block; }
+    main .section .proflie .proflieRight .skill img {margin-bottom:30px; }
+    main .section .proflie .proflieRight .skill > img:nth-child(2) {display:none;}
+    main .section .proflie .proflieRight .skill > img:nth-child(3) {display:none;}
+    main .section .proflie .proflieRight .skill > img:nth-child(4) {display:none;}
+    main .section .proflie .proflieRight .skill span {display:block; }
 }
 
 /* animation */
