@@ -1,0 +1,4 @@
+* {scroll-behavior:smooth;}
+main {width:1400px; margin:0 auto;}
+main .section {}
+main .section img {height:100vh;}

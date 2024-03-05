@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/design.css">
+    <link rel="stylesheet" href="./styles/jquery.fullPage.css">
 </head>
 <body>
-    
+    <main>
+        <div class="section"><img src="./images/d_img/d-01.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-02.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-03.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-04.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-05.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-06.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-07.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-08.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-09.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-10.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-11.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-12.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-13.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-14.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-15.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-16.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-17.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-18.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-19.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-20.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-21.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-22.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-23.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-24.png" alt=""></div>
+        <div class="section"><img src="./images/d_img/d-25.png" alt=""></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script/jquery.fullPage.js"></script>
+    <script>
+        $('main').fullpage({
+            scrollBar:true, //스크롤바 표시하기 (기본값 false)
+            scrollingSpeed:200, //스크롤바 선환속도 (기본값 1000)
+            // navigation:true, //우측 내이게이션 표시하기(기본값 false)
+            // navigationTooltips:['intro','proflie','teamproject','project','design','thankyou'], //내비게이션에 마우스 올리면 제목 표시
+            // showActiveTooltip:true, //자동으로 제목 표시(기본값 false)
+        })
+        $(document).ready(function(){
+            $('#topBtn').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+        });
+    </script>
 </body>
 </html>
