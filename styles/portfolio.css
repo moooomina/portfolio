@@ -143,7 +143,8 @@ main .section .section_d .work_left {
 }
 main .section .section_d .work_left > img:first-child {width:212px; margin:20px 0 80px;}
 main .section .section_d .work_left > img:nth-child(2) {margin-bottom:60px;}
-main .section .section_d .work_left a:hover {transform:rotate(5deg);} 
+main .section .section_d .work_left a {transform-origin:left bottom;} 
+main .section .section_d .work_left a:hover {transform:rotate(-3deg);} 
 main .section .section_d .page {position:absolute; bottom:100px;}
 main .section .section_d .work_right img {
     position:absolute; bottom:72px; right:0; height:800px;
@@ -156,7 +157,7 @@ main .section .thankyou .tree_bg {
     position:absolute; left:0; bottom:0; width:100%;
 }
 main .section .thankyou .tree_bg img {
-    position:absolute; left:40%; bottom:40%;
+    position:absolute; left:35%; bottom:45%;
 }
 /* 푸터 */
 footer {}

@@ -158,8 +158,8 @@ html.fp-enabled,
     width: 12px;
     margin: -6px 0 0 -6px;
     border-radius: 100%;
-    background:#f5f5f5; /* ì¶”ê°€ */
-    box-shadow: 0px 2px 5px rgb(87 124 147 / 30%); /* ì¶”ê°€ */
+    background:#fcead1; /* ì¶”ê°€ */
+    box-shadow: 0px 2px 5px rgba(255, 232, 197, 0.774); /* ì¶”ê°€ */
  }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
@@ -169,8 +169,8 @@ html.fp-enabled,
     height: 5px;
     width: 5px;
     border: 0;
-    background: #999;  /* #333ì—ì„œ ìˆ˜ì • */
-    box-shadow: 0px 5px 10px rgb(87 124 147 / 30%);  /* ì¶”ê°€ */
+    background: #efb57f;  /* #333ì—ì„œ ìˆ˜ì • */
+    box-shadow: 0px 5px 10px rgba(255, 232, 197, 0.774);  /* ì¶”ê°€ */
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
@@ -189,7 +189,7 @@ html.fp-enabled,
 #fp-nav ul li .fp-tooltip {
     position: absolute;
     top: -2px;
-    color: #999;
+    color: #efb57f;
     font-size: 14px;
     font-family: arial, helvetica, sans-serif;
     white-space: nowrap;

@@ -110,7 +110,7 @@
             <div class="section_w work_by">
                 <div class="work_left">
                     <img src="./images/Website_work2.png" alt="">
-                    <a href="#">
+                    <a href="#" id="by_web">
                         <img src="./images/Click.png" alt="">
                         <img src="./images/byredo_img.png" alt="">
                     </a>
@@ -126,7 +126,7 @@
                     <div class="right_bottom">
                         <img src="./images/Group 25.png" alt="">
                         <img src="./images/bottom_5.png" alt="">
-                        <a href="#"><img src="./images/bottom_3.png" alt=""></a>
+                        <a href="#" id="by_pro"><img src="./images/bottom_3.png" alt=""></a>
                         <a href="https://github.com/moooomina/byredo_clonecoding.git" target="_blank"><img src="./images/bottom_4.png" alt=""></a>
                     </div>
                     <div class="page">
@@ -175,6 +175,15 @@
                 return false;
             });
         });
+        const by_pro = document.querySelector('#by_pro')
+        const by_web = document.querySelector('#by_web')
+        console.log(by_pro, by_web)
+        by_pro.addEventListener('click',()=>{
+            alert('현재 작업중입니다.')
+        })
+        by_web.addEventListener('click',()=>{
+            alert('현재 작업중입니다.')
+        })
     </script>
 </body>
 </html>
