@@ -42,16 +42,10 @@
         $('main').fullpage({
             scrollBar:true, //스크롤바 표시하기 (기본값 false)
             scrollingSpeed:200, //스크롤바 선환속도 (기본값 1000)
-            // navigation:true, //우측 내이게이션 표시하기(기본값 false)
-            // navigationTooltips:['intro','proflie','teamproject','project','design','thankyou'], //내비게이션에 마우스 올리면 제목 표시
-            // showActiveTooltip:true, //자동으로 제목 표시(기본값 false)
+            navigation:true, //우측 내이게이션 표시하기(기본값 false)
+            navigationTooltips:['Intro','NameCard','NameCard','NameCard','NameCard','NameCard','NameCard','NameCard','NameCard','Coupon','Sticker','Sticker','Card','Card','Card','Card','Card','Card','Card','Card','Card','Package','Poster','Leaflet','Thankyou'], //내비게이션에 마우스 올리면 제목 표시
+            showActiveTooltip:true, //자동으로 제목 표시(기본값 false)
         })
-        $(document).ready(function(){
-            $('#topBtn').click(function(){
-                $('html, body').animate({scrollTop : 0},800);
-                return false;
-            });
-        });
     </script>
 </body>
 </html>

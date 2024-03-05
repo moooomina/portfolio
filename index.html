@@ -8,6 +8,7 @@
     <title>Min-A portfolio</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/portfolio.css">
+    <link rel="stylesheet" href="./styles/video.css">
     <link rel="stylesheet" href="./styles/jquery.fullPage.css">
 </head>
 <body>
@@ -110,7 +111,7 @@
             <div class="section_w work_by">
                 <div class="work_left">
                     <img src="./images/Website_work2.png" alt="">
-                    <a href="#">
+                    <a href="#" id="by_web">
                         <img src="./images/Click.png" alt="">
                         <img src="./images/byredo_img.png" alt="">
                     </a>
@@ -126,7 +127,7 @@
                     <div class="right_bottom">
                         <img src="./images/Group 25.png" alt="">
                         <img src="./images/bottom_5.png" alt="">
-                        <a href="#"><img src="./images/bottom_3.png" alt=""></a>
+                        <a href="#" id="by_pro"><img src="./images/bottom_3.png" alt=""></a>
                         <a href="https://github.com/moooomina/byredo_clonecoding.git" target="_blank"><img src="./images/bottom_4.png" alt=""></a>
                     </div>
                     <div class="page">
@@ -151,6 +152,17 @@
             </div>
         </div>
         <div class="section">
+            <div class="wrapper">
+                <input type="checkbox">
+                <div class="video">
+                    <iframe width="1250" height="703" src="https://www.youtube.com/embed/J_FNWoqFmc8?autoplay=1&mute=1" title="은평의 계절 진담" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="text">
+                    <span data-text="Watch the video"></span>
+                </div>
+            </div>
+        </div>
+        <div class="section">
             <div class="thankyou">
                 <span class="tree_bg">
                     <img src="./images/Thankyou.png" alt="">
@@ -164,10 +176,7 @@
     <script>
         $('main').fullpage({
             scrollBar:true, //스크롤바 표시하기 (기본값 false)
-            scrollingSpeed:200, //스크롤바 선환속도 (기본값 1000)
-            // navigation:true, //우측 내이게이션 표시하기(기본값 false)
-            // navigationTooltips:['intro','proflie','teamproject','project','design','thankyou'], //내비게이션에 마우스 올리면 제목 표시
-            // showActiveTooltip:true, //자동으로 제목 표시(기본값 false)
+            scrollingSpeed:200, //스크롤바 선환속도 (기본값 1000))
         })
         $(document).ready(function(){
             $('#topBtn').click(function(){
@@ -175,6 +184,15 @@
                 return false;
             });
         });
+        const by_pro = document.querySelector('#by_pro')
+        const by_web = document.querySelector('#by_web')
+        console.log(by_pro, by_web)
+        by_pro.addEventListener('click',()=>{
+            alert('현재 작업중입니다.')
+        })
+        by_web.addEventListener('click',()=>{
+            alert('현재 작업중입니다.')
+        })
     </script>
 </body>
 </html>
