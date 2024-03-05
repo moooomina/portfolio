@@ -145,6 +145,9 @@ main .section .section_d .work_left > img:first-child {width:212px; margin:20px 
 main .section .section_d .work_left > img:nth-child(2) {margin-bottom:60px;}
 main .section .section_d .work_left a:hover {transform:rotate(5deg);} 
 main .section .section_d .page {position:absolute; bottom:100px;}
+main .section .section_d .work_right img {
+    position:absolute; bottom:72px; right:0; height:800px;
+}
 /* thankyou */
 main .section .thankyou {}
 main .section .thankyou .tree_bg {
