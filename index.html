@@ -187,11 +187,13 @@
         const by_pro = document.querySelector('#by_pro')
         const by_web = document.querySelector('#by_web')
         console.log(by_pro, by_web)
-        by_pro.addEventListener('click',()=>{
+        by_pro.addEventListener('click',(e)=>{
             alert('현재 작업중입니다.')
+            e.preventDefault()
         })
-        by_web.addEventListener('click',()=>{
+        by_web.addEventListener('click',(e)=>{
             alert('현재 작업중입니다.')
+            e.preventDefault()
         })
     </script>
 </body>
