@@ -1,4 +1,3 @@
-
 .wrapper {
     --color: #1F242D;
     --color-invert: #ffffff;
@@ -112,25 +111,25 @@
             }
             }
         }
-        &:checked {
-            width: 100%;
-            height: 100%;
-            border-radius: 0;
-            ~ .video {
-            clip-path: var(--clip-path-clicked);
-            }
-            ~ .text {
-            --opacity: 0;
-            transition: opacity .3s var(--timing-function);
-            // &::after {
-            //     clip-path: var(--clip-path-clicked);
-            // }
-            > span {
-                &::after {
-                clip-path: var(--clip-path-clicked);
-                }
-            }
-            }
-        }
+        // &:checked {
+        //     width: 100%;
+        //     height: 100%;
+        //     border-radius: 0;
+        //     ~ .video {
+        //     clip-path: var(--clip-path-clicked);
+        //     }
+        //     ~ .text {
+        //     --opacity: 0;
+        //     transition: opacity .3s var(--timing-function);
+        //     // &::after {
+        //     //     clip-path: var(--clip-path-clicked);
+        //     // }
+        //     > span {
+        //         &::after {
+        //         clip-path: var(--clip-path-clicked);
+        //         }
+        //     }
+        //     }
+        // }
     }
 }
